@@ -26,8 +26,6 @@
 
   }
 
-
-
   .calculator {
 
    background: white;
@@ -42,8 +40,6 @@
 
   }
 
-
-
   .calculator h2 {
 
    text-align: center;
@@ -51,8 +47,6 @@
    margin-bottom: 20px;
 
   }
-
-
 
   input[type="number"] {
 
@@ -70,8 +64,6 @@
 
   }
 
-
-
   .buttons {
 
    display: flex;
@@ -83,8 +75,6 @@
    margin-top: 15px;
 
   }
-
-
 
   .buttons button {
 
@@ -108,15 +98,11 @@
 
   }
 
-
-
   .buttons button:hover {
 
    background-color: #0056b3;
 
   }
-
-
 
   #result {
 
@@ -142,8 +128,6 @@
 
   <input type="number" id="num2" placeholder="Enter second number(if needed)">
 
-
-
   <div class="buttons">
 
    <button onclick="calculate('sum')">Sum</button>
@@ -164,13 +148,9 @@
 
   </div>
 
-
-
   <div id="result">Result:</div>
 
  </div>
-
-
 
  <script>
 
@@ -181,8 +161,6 @@
    let num2 = parseFloat(document.getElementById("num2").value);
 
    let result;
-
-
 
    switch(operation) {
 
@@ -239,10 +217,7 @@
      result = "Unknown operation";
 
    }
-
-
-
-   document.getElementById("result").innerText = `Result: ${result}`;
+  document.getElementById("result").innerText = `Result: ${result}`;
 
   }
 
